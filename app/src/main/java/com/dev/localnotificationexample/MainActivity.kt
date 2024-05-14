@@ -92,9 +92,9 @@ class MainActivity : AppCompatActivity()
         val day = binding.datePicker.dayOfMonth
         val month = binding.datePicker.month
         val year = binding.datePicker.year
-
+        val second = 0
         val calendar = Calendar.getInstance()
-        calendar.set(year, month, day, hour, minute,0)
+        calendar.set(year, month, day, hour, minute, second)
         return calendar.timeInMillis
     }
 
